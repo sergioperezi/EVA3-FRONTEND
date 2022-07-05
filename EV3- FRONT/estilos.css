@@ -1,0 +1,54 @@
+/* INTEGRANTES: */
+/* JAIME MUÑOZ CARRASCO */
+/* SERGIO PEREZ INOSTROZA */
+
+
+body{
+    background-color: black;
+}
+
+.texto{
+    color: white;
+}
+
+hr{
+    color: white;
+}
+
+.botones_principales{
+    font-size: 25px;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.botones_principales:hover{
+    color: steelblue;
+}
+
+#card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+  
+.carousel-caption{
+    position: absolute; 
+    top: 30%;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo{
+    font-size: 80px;
+}
+
+#ima{
+    filter: brightness(0.6);
+}
+
+
+  
+

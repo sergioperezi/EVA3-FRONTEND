@@ -1,0 +1,397 @@
+<!-- INTEGRANTES: -->
+<!-- JAIME MUÑOZ CARRASCO -->
+<!-- SERGIO PEREZ INOSTROZA -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="" href="./estilos.css">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!-- BARRA DE NAVEGACION -->
+
+        <div class="row p-0">
+
+            <nav class="navbar fixed-top">
+
+                <div class="container-fluid">
+
+                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-2">
+                        <a class="navbar-brand" href="index4.html"><img src="./iconos/bandeja2.png" width="50" alt=""></a>
+                    </div>
+
+                    
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 d-none d-sm-block text-end">
+                        <a class="botones_principales" href="index4.html">Home</a>
+                        
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 d-none d-sm-block">
+                        <a class="botones_principales" href="formulario.html">Haz tu pedido</a>
+                    </div>
+
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>                          
+                        </div>
+
+                        <div class="row px-3">
+                            <div class="col-12 d-lg-none d-sm-none d-md-none d-md-block">
+                                <a class="nav-link" href="formulario.html"><h5>Haz tu Pedido</h5></a>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Categorias
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Comida Chilena</a></li>
+                                      <li><a class="dropdown-item" href="#">Comida China</a></li>
+                                      <li><a class="dropdown-item" href="#">Comida Mexicana</a></li>
+                                      <li><a class="dropdown-item" href="#">Comida Peruana</a></li>
+                                      <li><a class="dropdown-item" href="#">Comida Venezolana</a></li>
+                                      <li><a class="dropdown-item" href="#">Comida Rápida</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Populares
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Ofertas
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                              
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ofertas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Populares</a>
+                                </li>
+    
+                                
+                            </ul>
+
+    
+                          
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+
+            </nav>
+
+        </div>
+
+        <!-- CARRUSEL -->
+
+        <div class="row">
+
+            <div id="carouselExampleInterval" class="carousel slide p-0" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="3000">
+
+                      <img src="./imagenes/pizza.jpg" class="d-block w-100" alt="..." id="ima">
+                           
+                        <div class="carousel-caption d-none d-md-block" style="color:white;">
+                            <h5 class="titulo">Los Watacas</h5>
+                            <br>
+                            <h3>La mejor comida de Santiago</h3>
+                        </div>
+                        
+    
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagenes/helado.jpg" class="d-block w-100" alt="..." id="ima">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo">Los Watacas</h5>
+                            <br>
+                            <h3>La mejor comida de Santiago</h3>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagenes/carne.jpg" class="d-block w-100" alt="..." id="ima">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo">Los Watacas</h5>
+                            <br>
+                            <h3>La mejor comida de Santiago</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SEPARACION Y TITULO EN RESOLUCIONES 320PX Y 576PXs  -->
+
+        <br>
+
+        <hr>
+
+        
+
+        <div class="row">
+          <div class="col-12 d-lg-none d-md-none d-md-block">
+            <br>
+            
+            <h1 style="text-align: center; color:white;">Los Watacas</h1>
+        
+            <h4 style="text-align: center; color:gainsboro;">La mejor comida de Santiago</h4>
+
+            <br>
+
+            <hr>
+          </div>
+        </div>
+
+        
+
+        <br>
+
+        <!-- TEXTO -->
+
+        <div class="row p-3">
+            <div class="col-lg-6 col-12">
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque soluta ducimus dicta asperiores perferendis quibusdam quae assumenda sit sed explicabo, aliquid, sapiente eligendi ullam odio sint distinctio illo ex laborum.</p>
+                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, temporibus nesciunt! Culpa exercitationem sed ea est corrupti id rerum accusantium recusandae sunt ipsam, excepturi eligendi nisi nam? Delectus, aliquam fugiat.</p>     
+            </div>
+    
+            <div class="col-lg-6 col-12">
+                <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dignissimos mollitia culpa itaque enim quos nostrum blanditiis eum ducimus quam quisquam, perspiciatis nemo totam aliquam soluta cum et inventore veritatis!</p>  
+                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni non et incidunt numquam excepturi est! Fugiat veritatis odit accusamus ducimus tempora vel officia sequi explicabo sint, eum nemo odio molestiae!</p>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+
+        <!-- CARD -->
+
+        <br>
+
+        <div class="row">
+
+          <h1 style="text-align: center; color: orange;">Nuestros Locales</h1>
+          <br>
+          <br>
+          <br>
+
+            <div class="col-lg-6 col-12 p-4">
+
+                <div class="card text-bg-warning mb-3" style="max-width: 540px;" id="card" >
+                    <div class="row g-0">
+
+                      <div class="col-md-4 pt-3">
+                        <img src="./restaurantes/barrio.jpeg" class="img-fluid rounded" alt="...">
+                      </div>
+
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">El Barrio</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Actualizado hace 3 mins</small></p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 p-4">
+                <div class="card text-bg-warning mb-3" style="max-width: 540px;" id="card">
+                    <div class="row g-0">
+                      <div class="col-md-4 pt-3">
+                        <img src="./restaurantes/cabrera.jpg" class="img-fluid rounded" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">La Cabrera</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-12 p-4">
+
+                <div class="card text-bg-warning mb-3" style="max-width: 540px;" id="card">
+                    <div class="row g-0">
+
+                      <div class="col-md-4 pt-3">
+                        <img src="./restaurantes/caldenes.jpg" class="img-fluid rounded" alt="...">
+                      </div>
+
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Los Caldenes</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Actualizado hace 3 mins</small></p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 p-4">
+                <div class="card text-bg-warning mb-3" style="max-width: 540px;" id="card">
+                    <div class="row g-0">
+                      <div class="col-md-4 pt-3">
+                        <img src="./restaurantes/javier.jpeg" class="img-fluid rounded" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">San Javier</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-12 p-4">
+
+                <div class="card text-bg-warning mb-3" style="max-width: 540px;" id="card">
+                    <div class="row g-0">
+
+                      <div class="col-md-4 pt-3">
+                        <img src="./restaurantes/moreira.jpg" class="img-fluid rounded" alt="...">
+                      </div>
+
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Las Condes</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Actualizado hace 3 mins</small></p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 p-4">
+                <div class="card text-bg-warning mb-3" style="max-width: 540px;" id="card">
+                    <div class="row g-0">
+                      <div class="col-md-4 pt-3">
+                        <img src="./restaurantes/quilmes.jpg" class="img-fluid rounded" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Vitacura</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+        <!-- PIE DE PAGINA -->
+
+        <hr>
+        
+        <br>
+
+        <footer >
+            
+            <div class="row p-3 bg-light">
+                <h4>Recomendaciones</h4>
+                <div class="col-xl-4 col-md-4 col-12 ">
+                    <a href=""><iframe width="100%" height="315" src="https://www.youtube.com/embed/6ADNGrVFLS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+
+                <div class="col-xl-4 col-md-4 col-12">
+                    <a href=""><iframe width="100%" height="315" src="https://www.youtube.com/embed/g_jJzN1eaRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+
+                <div class="col-xl-4 col-md-4 col-12">
+                    <a href=""><iframe width="100%" height="315" src="https://www.youtube.com/embed/MWlHuWmnyek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+            </div>
+
+            
+            <div class="row px-3 pb-2 bg-light">
+
+                <div class="col-12">
+                    <h5 style="text-align: center;">Contacto</h5>
+                    <p style="text-align: center;">correo: contacto@wataca.cl - Telefono: 84578794</p>
+                    <a href="#">Politica de privacidad</a>-<a href="#">Terminos del servicio</a>
+                </div>
+            </div>
+           
+        </footer>
+
+        
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

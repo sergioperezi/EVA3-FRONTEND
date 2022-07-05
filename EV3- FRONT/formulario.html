@@ -1,0 +1,279 @@
+<!-- INTEGRANTES: -->
+<!-- JAIME MUÑOZ CARRASCO -->
+<!-- SERGIO PEREZ INOSTROZA -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="" href="./estilos.css">
+    <link rel="stylesheet" type="" href="./envio.html">
+    <link rel="stylesheet" type="" href="./estilos.css">
+    <script src="validar.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!-- BARRA DE NAVEGACION -->
+
+        <div class="row p-0">
+
+            <nav class="navbar fixed-top">
+
+                <div class="container-fluid">
+
+                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-2">
+                        <a class="navbar-brand" href="index4.html"><img src="./iconos/bandeja2.png" width="50" alt=""></a>
+                    </div>
+
+                    
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 d-none d-sm-block text-end">
+                        <a class="botones_principales" href="index4.html">Home</a>
+                        
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 d-none d-sm-block">
+                        <a class="botones_principales" href="formulario.html">Haz tu pedido</a>
+                    </div>
+
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>                          
+                        </div>
+    
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Categorias
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Populares
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Ofertas
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                              
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Populares</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ofertas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Populares</a>
+                                </li>
+    
+                                
+                            </ul>
+
+    
+                          
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+
+            </nav>
+
+        </div>
+        <!-- TITULO-->
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h1 style="text-align: center; color:white;">Los Watacas</h1>
+        
+            <h4 style="text-align: center; color:gainsboro;">La mejor comida de Santiago</h4>
+
+        <!-- FORMULARIO -->
+
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h2 style="text-align: center; color: orange;">Crea tu pedido</h2>
+
+        <br>
+        <br>
+
+        <form action="envio.html" method="post" onsubmit="return validar();">
+
+            <div class="row" style="color: orange;">
+
+                <div class="col-lg-3 col-1">
+                    
+                </div>
+        
+                <div class="col-lg-6 col-10">
+
+                    <div class="col-12">
+                        <label for="">Nombre Completo</label>
+                        <input type="text" id="nombre" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Carlos Gonzalez Gonzalez">
+                        <br>
+                        <label for="">Rut</label>
+                        <input type="text" id="rut" class="form-control" name="txt_rut" id="txt_rut" placeholder="11111111-1">
+                        <br>
+                        <label for="">Dirección</label>
+                        <input type="text" id="direccion" class="form-control" name="txt_direccion" id="txt_direccion" placeholder="Avenida Siempre Viva 76">
+                        <br>
+                        <label for="">Telefono</label>
+                        <input type="text" id="telefono" class="form-control" name="txt_telefono" id="txt_telefono" placeholder="958640133">
+                    </div>
+                    <br>
+    
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" id="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+            
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Pizza Grande</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Carne Asada
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Helado
+                        </label>
+                    </div>
+            
+                    <br>
+    
+                    <form>
+                        <div>
+                            <label for="customRange3" class="form-label">Cantidad de Empanadas</label>
+                            <br>
+                            <input id="rangeInput" class="form-range" type="range" min="0" max="6" oninput="amount.value=rangeInput.value" />
+                            <br>
+                            <input id="amount" type="number" value="1" min="0" max="6" oninput="rangeInput.value=amount.value" />
+                        </div>
+                    </form>
+    
+                    <br>
+    
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Bebida</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <br>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="agregar soja"></textarea>
+                    </div>
+                    
+                    <br>
+                    <br>
+    
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-success" value="Enviar" onclick="javascript:void(mostrarDatos())">
+                        <input type="reset" class="btn btn-warning" value="Limpiar Formulario">
+                    </div>
+
+                    <br>
+                                
+                </div>
+        
+                <div class="col-3">
+                    
+                                
+                </div>
+            </div>
+
+
+        </form>
+
+        
+
+        <!-- PIE DE PAGINA -->
+
+        <hr>
+        
+        <br>
+
+        <footer >
+            
+            <div class="row p-3 bg-light">
+                <h4>Recomendaciones</h4>
+                <div class="col-xl-4 col-md-4 col-12 ">
+                    <a href=""><iframe width="100%" height="315" src="https://www.youtube.com/embed/6ADNGrVFLS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+
+                <div class="col-xl-4 col-md-4 col-12">
+                    <a href=""><iframe width="100%" height="315" src="https://www.youtube.com/embed/g_jJzN1eaRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+
+                <div class="col-xl-4 col-md-4 col-12">
+                    <a href=""><iframe width="100%" height="315" src="https://www.youtube.com/embed/MWlHuWmnyek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+            </div>
+
+            
+            <div class="row px-3 pb-2 bg-light">
+
+                <div class="col-12">
+                    <h5 style="text-align: center;">Contacto</h5>
+                    <p style="text-align: center;">correo: contacto@wataca.cl - Telefono: 84578794</p>
+                    <a href="#">Politica de privacidad</a>-<a href="#">Terminos del servicio</a>
+                </div>
+            </div>
+           
+        </footer>
+
+        
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
